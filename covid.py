@@ -78,12 +78,14 @@ class Person:
 
 def main():
     people = []
-    nInfected = 1
+    infectedPeople = []
+    nInitInfected = 10
     for i in range (200):
         node = Person()
-        if(bool(random.getrandbits(1)) and nInfected > 0):
+        if(bool(random.getrandbits(1)) and nInitInfected > 0):
             node.infected = 1
-            nInfected -= 1
+            nInitInfected -= 1
+            infectedPeople.append(node)
         people.append(node)
 
     while True:
@@ -92,14 +94,15 @@ def main():
                 pygame.quit()
                 sys.exit()
         screen.fill((0,0,0))
-        for i in range(len(people)):
-            for j in range(len(people)):
-                if (i != j):
-                    if (people[i].rect.colliderect(people[j].rect) and
-                            people[j].infected == True):
-                        people[i].infected = True
-            people[i].draw()
-            people[i].move()
+        for person in people:
+            for x in infectedPeople:
+                if (person in infectedPeople):
+                    break
+                if (person.rect.colliderect(x.rect) and x.infected == True):
+                    person.infected = True
+                    infectedPeople.append(person)
+            person.draw()
+            person.move()
         pygame.display.update()
         pygame.time.Clock().tick(FPS)
 
