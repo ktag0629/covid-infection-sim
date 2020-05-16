@@ -5,7 +5,8 @@ There a lot of families, businesses and individuals suffering from this virus an
 Created a simulation of virus transmission. The inspiration came from a Washington Post article showing how the virus could spread if people didn't heed the mandatory lockdowns and social distancing policies. 
 
 
-<iframe src="https://giphy.com/embed/Wra83wPt7hSnORPl4O" width="480" height="388" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Wra83wPt7hSnORPl4O">via GIPHY</a></p>
+
+<a href="https://giphy.com/gifs/Wra83wPt7hSnORPl4O"><img src="https://giphy.com/embed/Wra83wPt7hSnORPl4O" width="480" height="388" frameBorder="0" class="giphy-embed" allowFullScreen></>via GIPHY</a>
 
 The Washington Post Article can be found here:
 https://www.washingtonpost.com/graphics/2020/world/corona-simulator/
